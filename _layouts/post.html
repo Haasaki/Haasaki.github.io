@@ -27,3 +27,17 @@ layout: default
     </div>
   </div>
 </div>
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'Haasaki',
+    repo: 'The repo to store comments',
+    oauth: {
+        client_id: 'cc3629d968f096d7aa3f',
+        client_secret: '48a81e02d5086f3524074de51dd1e8916f9226d1',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
