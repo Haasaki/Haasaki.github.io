@@ -3611,10 +3611,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
 }
 .navbar-brand {
-  float: left;
-  padding: 20px 15px;
-  font-size: 18px;
-  line-height: 20px;
+ float: left;
+padding: 20px 15px;
+font-size: 18px;
+line-height: 20px;
+position: absolute;
+top: 50px;
+right: 80px;
+border-radius: 5px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
