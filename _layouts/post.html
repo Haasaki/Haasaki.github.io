@@ -1,19 +1,6 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'Haasaki',
-    repo: 'haasaki.github.io',
-    oauth: {
-        client_id: 'cc3629d968f096d7aa3f',
-        client_secret: 'f310d66e4d2cb703994bc5cfb90a8e0d84366be6',
-    },
-});
-gitment.render('gitmentContainer');
-</script>
 <div class="container docs-container">
   <div class="row">
     <div class="col-md-3">
@@ -35,7 +22,20 @@ gitment.render('gitmentContainer');
             <article class="post-content">
               {{ content }}
             </article>
-            <div id="gitmentContainer"></div>
+            <div id="gitmentContainer">评论区</div>
+            <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'Haasaki',
+    repo: 'haasaki.github.io',
+    oauth: {
+        client_id: 'cc3629d968f096d7aa3f',
+        client_secret: 'f310d66e4d2cb703994bc5cfb90a8e0d84366be6',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
         </div>
       </div>
     </div>
