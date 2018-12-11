@@ -80,6 +80,9 @@ RunnableQueue主要存放提交的Runnable，该Runnable是一个BlockedQueue，
 	int size();
 
       }
+      
+      
+      
 #### 3.ThreadFactory
 ThreadFactory提供了创建线程的接口，个性化设置Thread，比如加入到哪个Group里面，优先级，Thread名字。
 
@@ -90,6 +93,9 @@ ThreadFactory提供了创建线程的接口，个性化设置Thread，比如加�
  	// 用于创建线程
 	Thread createThread(Runnable runnable);
       }
+      
+      
+      
 #### 4.DenyPolicy
 DenyPolicy主要用于当Queue中的Runnable达到了limit上限的话，决定采用哪种策略通知提交者。
 
